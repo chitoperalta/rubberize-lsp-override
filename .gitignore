@@ -1,3 +1,6 @@
+.virtual_documents
+dev
+
 *.bundle.*
 lib/
 node_modules/
@@ -122,3 +125,4 @@ dmypy.json
 
 # Yarn cache
 .yarn/
+dev/Untitled.ipynb
