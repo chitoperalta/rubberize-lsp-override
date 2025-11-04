@@ -2,7 +2,11 @@
 
 [![Github Actions Status](https://github.com/chitoperalta/rubberize-lsp-override/workflows/Build/badge.svg)](https://github.com/chitoperalta/rubberize-lsp-override/actions/workflows/build.yml)
 
-A JupyterLab extension to override Rubberize magics in jupyterlab-lsp.
+A JupyterLab extension to override [Rubberize](https://github.com/chitoperalta/rubberize) magics in [`jupyterlab-lsp`](https://github.com/jupyter-lsp/jupyterlab-lsp).
+
+This frontend extension is a `jupyterlab-lsp` plugin that makes Rubberize’s `%%tap` and `%%ast` cell magics compatible with the language server. Without it, Python code inside those cells is ignored by the language server, so features like linting and name resolution won’t work there — most noticeably, anything defined in those cells will show up as “undefined” in later ones.
+
+This plugin makes those magics behave as standard Python cells and preserves full language server support without interfering with Rubberize features.
 
 ## Requirements
 
